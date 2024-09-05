@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+             // Variables and parsing
+            let num1 = 10;
+            let num2 = "20"; // String
+            let result = num1 + parseInt(num2);  // 10 + 20 = 30
+
+            // Concatenation and if-else statement
+            let message = "The result of " + num1 + " + " + num2 + " is: " + result;
+            console.log(message);  //let message = "The result of " + 10 + " + " + 20 + " is: " + 30;
+
+            if (result >= 30) {
+                console.log("Result is 30 or greater");   //this will be printed
+            } else {
+                console.log("Result is less than 30");
+            }
+
+
+
+                    
+            function processNumbers(numStr1, numStr2) {   //20, 30 
+                let num1 = parseInt(numStr1);    //convert to integer
+                let num2 = parseInt(numStr2);
+
+          
+                let sum = num1 + num2;   // 20 + 30  = 50     
+                let product = num1 * num2;    // =600
+                let difference = num1 - num2;   // 20 - 30 = -10
+
+                console.log("Sum: " + sum + ", Product: " + product + ", Difference: " + difference);
+
+                // Increment and decrement example
+                let count = 5;
+                count++;  // Increment by 1
+                count--;  // Decrement by 1
+                console.log("Count after increment and decrement: " + count);
+
+                // If-else statement to check conditions
+                if (sum > 50) {
+                    return "The sum is greater than 50.";
+                } else {
+                    return "The sum is 50 or less.";
+                }
+            }
+
+            // Test the function
+            let resultMessage = processNumbers("20", "30");  // Arguments are string numbers
+            console.log(resultMessage);
+
+
+    
+
+         
+    </script>
+</body>
+</html>
